@@ -5,10 +5,10 @@ This is a simple calculator project built using Java, implementing Object-Orient
 The Calculator-Java project is a straightforward console-based calculator application written in Java. It provides basic arithmetic functionalities such as addition, subtraction, multiplication, and division.
 
 ## Features
-- Addition: Perform addition of two numbers.
-- Subtraction: Perform subtraction between two numbers.
-- Multiplication: Perform multiplication of two numbers.
-- Division: Perform division of two numbers. (Handles division by zero.)
+- (+) Addition: Perform addition of two numbers.
+- (-) Subtraction: Perform subtraction between two numbers.
+- (x) Multiplication: Perform multiplication of two numbers.
+- (/) Division: Perform division of two numbers. (Handles division by zero.)
 
 ## Usage
 - Upon running the application, follow the prompts on the console to input two numbers and select the operation you want to perform.
