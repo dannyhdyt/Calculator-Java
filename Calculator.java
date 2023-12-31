@@ -1,7 +1,8 @@
 package javaprogram;
-import com.sun.source.tree.WhileLoopTree;
 
 import java.util.Scanner;
+import com.sun.source.tree.WhileLoopTree;
+
 
 public class Calculator {
     public static void main(String[] args) {
@@ -11,15 +12,16 @@ public class Calculator {
 
         boolean isThisTrue = true;
         while (isThisTrue) {
-            System.out.println(" -KALKULATOR SEDERHANA- ");
+            System.out.println(" \n-Welcome to Simple Calculator-Java!- \n");
 
-            System.out.print("Input Nilai Pertama: ");
+            System.out.print("Enter first number: ");
             int nilai1 = inputNilai.nextInt();
-            System.out.print("Input Nilai Kedua: ");
+            System.out.print("Enter second number: ");
             int nilai2 = inputNilai.nextInt();
-            System.out.print("Pilih Operasi ( + , - , x , / ): ");
+            System.out.print(
+                "Choose an operation: [ + , - , x , / ] \n"+
+                "Enter operation choice: ");
             String pemilihan = inputNilai.next();
-
 
             int result = 0;
             switch (pemilihan) {
@@ -36,11 +38,11 @@ public class Calculator {
                     result = operator.pembagian(nilai1, nilai2);
                     break;
                 default:
-                    System.out.println("Operasi tidak tersedia silahkan diulang");
+                    System.out.println("Operation not available please repeat");
                     continue;
             }
             if (isThisTrue) {
-                System.out.println("Hasil: " + result);
+                System.out.println("Result: " + nilai1 +" "+ pemilihan +" "+ nilai2 +" "+"= "+ result + "\n");
                 break;
             }
         }
